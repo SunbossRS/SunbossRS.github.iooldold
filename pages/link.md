@@ -31,7 +31,7 @@ permalink: /links
 
 <br><br>
 
-{% if site.data.socical.vssue.enable  == true %}
+{% if site.data.social.vssue.enable  == true %}
   {% include comments.html %}
 {% endif %}
 {% include scripts.html %}
