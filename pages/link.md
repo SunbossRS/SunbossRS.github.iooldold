@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Links
+title: 友情链接
 tagline: My friends.
-permalink: /links.html
+permalink: /links
 ---
-
 
 {% for f in site.data.friends %}
 <div class="link-chip">
