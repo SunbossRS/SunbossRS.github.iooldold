@@ -23,14 +23,14 @@ permalink: /links
 > 名称: *我的网站*  
 > 链接: *https://*  
 > 头像链接: *https://*  
-> 描述: *这是我的网站*  
-如果要举报，请输入:
+> 描述: *这是我的网站*
+另外，如果要举报一些在这里显示的网站，请输入:
 > 我要举报*网站名称*。  
 > 原因: *填写原因*  
 
 <br><br>
 
-{% if site.data.vssue.enable  == true %}
+{% if site.data.socical.vssue.enable  == true %}
   {% include comments.html %}
 {% endif %}
 {% include scripts.html %}
