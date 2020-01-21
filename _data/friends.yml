@@ -28,10 +28,10 @@
   url: https://mc.whitegem.net/
   describe:
   
-- name: Fly6022
-  image:
+- name: Fly6022's Blog
+  image: https://fly6022.fun/images/avatar.png
   url: https://fly6022.fun/
-  describe: MCEBS室长
+  describe: 自己的感受·比道理重要，这里是fly6022的博客。
 
 - name: Sctop 童年是个风筝的博客
   image:
