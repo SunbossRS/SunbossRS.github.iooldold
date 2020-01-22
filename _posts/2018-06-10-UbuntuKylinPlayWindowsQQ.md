@@ -47,9 +47,10 @@ wine --version
 亲测：  
 停用`ntoskrnl.exe`是为了解决无法正常启动QQ的问题，使用原装windows的`riched20`是为了规避无法输入用户名的Bug，停用`txplatform.exe`是为了避免QQ无法完整退出而滞留整个Wine容器的问题，使用原装的`msls31.dll`和`dwrite.dll`是因为不要让这两个控件因为不受控制而让QQ突然崩溃。  
 然后保存.  
+![avatar](https://coding.net/u/SunbossRS/p/blog_web_source/git/raw/master/img/05/01.png)  
 
 ### 4. 设置字体(修复中文乱码的bug)
-在桌面（或者哪里都行）创建一个名字叫做`zh.reg`的文件，该文件里输入以下内容：
+把以下内容保存为`zh.reg`：
 ```reg
 REGEDIT4
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
@@ -80,7 +81,7 @@ REGEDIT4
 ```
 保存．  
 然后在终端输入`wine regedit`  
-`注册表>导入注册表文件>zh.reg`  
+注册表>导入注册表文件>zh.reg  
 
 ### 5.安装
 ```bash
@@ -89,9 +90,11 @@ wine ~/下载/*文件名*.exe
 进入安装页面.
 
 ### 6.进入
-这时安装好了,你的QQ应处于`~/.wine/drive_c/Program Files (x86)/Tencent/QQ/Bin`目录下.  
+以QQ作为例子，这时你的QQ应处于`~/.wine/drive_c/Program Files (x86)/Tencent/QQ/Bin`目录下.  
 使用
 ```bash
 wine .wine/drive_c/Program\ Files\ \(x86\)/Tencent/QQ/Bin/QQ.exe
 ```
-来运行QQ.以后，运行QQ就是用上面的那个命令。
+来运行QQ.
+
+### 以后，运行QQ就是用上面的那个命令;-)
