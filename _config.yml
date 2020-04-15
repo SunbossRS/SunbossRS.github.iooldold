@@ -1,46 +1,124 @@
-title: "耀庄的博客" #博客标题
-description: "なんて素晴らしい時間でしょう！" #博客描述
-keywords: blog, minecraft, html #博客关键字
-author: "SunbossRS"
+title: "耀庄的博客"
+description: "なんて素晴らしい時間でしょう！"
+url: '' # your website url
+baseurl: "" # remember do not add /
+author: "mdui"
+avatar: /assets/images/avatar.png
+paginate: 6
+paginate_path: "/page:num/"
+headercard_left: https://sunbossrs.coding.net/p/ws-data/d/ws-data/git/raw/master/douga/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F/2019072422724_kh3Py.png
+headercard_right: 
 
-#title hide and show
-hide: "XD来找我啊"
-show: "！竟然被你找着了" 
+headbar: 
+   favicon: "https://ooo.0o0.ooo/2017/05/27/59294212bc16e.png" #  the website favicon
+   high_res_favicon: "https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png" #  the favicon using high quality format
+   apple_touch_icon: "https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png" # the iOS Home button icon
+   keywords: "blog 博客 玩家 原创 Minecraft" #  the site keywords
+   theme_color: "orange" #  the color of the Chrome address bar and the navbar, indigo/red/pink/purple/deep-purple/blue/light-blue/cyan/teal/green/light-green/lime/yellow/amber/orange/deep-orange/brown/grey/blue-grey
+   nprogress_color: "#29d" #  the color of the top loading progress bar
+   nprogress_buffer: 200 # the top loading progress bar buffers
 
-baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "sunbossrs.js.org" # change this to the base hostname & protocol for your site
-buildtime: "1463011200" #博客建立时的时间戳 可进入https://tool.lu/timestamp/将博客建立时的日期转换成时间戳
-           #The timestamp at the time of blog establishment can be entered at https://tool.lu/timestamp/to convert the date at the time of blog establishment into a timestamp.
+sns_share:
+   twitter: 'true'
+   facebook: 'true'
+   googleplus: 'true'
+   weibo: 'true'
+   linkedin: 'true'
+   qq: 'true'
+   telegram: 'true'
 
-PJAX: true #启用PJAX，会与评论系统冲突（如不用评论系统建议开启）
+friends:
+   - name: 'mdui官网'
+     url: 'https://mdui.org'
+     avatar: 'about:blank'
+     desc: '这个网站的CSS！'
+   - name: 'KeJun'
+     url: 'https://blog.kejun.me/'
+     avatar: 'https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png'
+     desc: '二次元智障'
 
-paginate: 7 #同时显示的最大文章数，超过自动分页
-paginate_path: "page:num"
+cute:
+   enable: true
+   live2d: false
+   music: true
+   music_player: aplayer
+   music_netease_id: 1422198842
+   music_netease_type: song # song, playlist, album, search, artist
 
-background: https://api.dujin.org/bing/1920.php
-theme_color: FF8000
+navbar:
+   - name: '主页'
+     url: '/'
+     icon: 'home'
+   - name: '标签'
+     url: '/tags'
+     icon: "&#xe893;"
+   - name: '友情链接'
+     url: '/friends'
+     icon: "&#xe8a3;"
 
-google_analytics:
-# hydrogen-blog date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-hydrogen-blog:
-  date_format: "%b %-d, %Y"
+background: '' # background image
 
-#MathJax switch
-MathJax: false
+comment:
+  used: "" # disqus,livere,gitment,valine
+  # disqus config
+  disqus_shortname: "" # Your disqus 
+  disqus_button: false # disqus load button
+  disqus_proxy: false # # disqus proxy(Do not use)
+  disqus_proxy_url: "" # (Do not use)
+  disqus_api_key: "" # (Do not use)
+  # livere config
+  livere_type: 'city'
+  livere_data_uid: ''
+  # gitment config
+  owner: ""
+  repo: ""
+  client_id: ""
+  client_secret: ""
+  #valine config
+  valine_notify: false #mail notifier
+  valine_verify: false #validation code
+  valine_app_id: ''
+  valine_app_key: ''
+  valine_placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!"
 
-#install emoji
 plugins:
-  - jemoji
+  - jekyll-paginate
+  - jekyll-feed
 
-# social account
-image:
-twitter:
-  username:
-#  site:
-facebook:
-  #publisher: null
-  #profile_id: null
-  app_id: null
-  #authors: null
-#  admins:
+mathjax: true
+
+google_analytics: ""  # google analytics code
+
+baidu_site_verification: ""  # baidu site verification code
+
+google_site_verification: ""  # google search console verification code
+
+baidu_auto_push: false  # if you used baidu auto push to commit links
+
+lang: "zh"  # lang zh/en
+
+deploy: "" # type 'coding' or 'github', your website deployer.
+
+custom_css: "" # Use the assets/css/customCss.css
+
+custom_js: "" # Use the assets/js/customJS.js
+
+prism:
+  themes: prism-okaidia
+  components: 
+    - bash
+    - html
+    - css
+  plugins: 
+
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.js
+  - Gemfile
+  - Gemfile.lock
+  - jekyll-theme-mdui.gemspec
+  - LICENSE.txt
+  - README.md
+  - vendor
+  - docs
