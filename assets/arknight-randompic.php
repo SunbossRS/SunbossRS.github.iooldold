@@ -68,5 +68,5 @@ $img[64]='20191115170433_EA8wx.jpg';
 $img[65]='20200107223050_rzjnq.jpg';
 $img[66]='20200109113908_ehnib.jpg';
 $img[67]='20200110110951_fBiB4.jpg';
-echo ${mainaddr .$img[$id] };
+header("${mainaddr} . $img[$id]");
 ?>
