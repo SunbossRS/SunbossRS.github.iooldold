@@ -6,8 +6,8 @@ author: "mdui"
 avatar: /assets/images/avatar.png
 paginate: 6
 paginate_path: "/page:num/"
-headercard_left: /assets/arknight-randompic.php
-headercard_right: /assets/arknight-randompic.php
+headercard_left: /randompicture/
+headercard_right: /randompicure/
 
 headbar: 
    favicon: "https://ooo.0o0.ooo/2017/05/27/59294212bc16e.png" #  the website favicon
