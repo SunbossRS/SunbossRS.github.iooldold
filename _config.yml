@@ -6,8 +6,8 @@ author: "mdui"
 avatar: /assets/images/avatar.png
 paginate: 6
 paginate_path: "/page:num/"
-headercard_left: https://sunbossrs.coding.net/p/ws-data/d/ws-data/git/raw/master/douga/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F/2019072422724_kh3Py.png
-headercard_right: 
+headercard_left: /assets/arknight-randompic.php
+headercard_right: /assets/arknight-randompic.php
 
 headbar: 
    favicon: "https://ooo.0o0.ooo/2017/05/27/59294212bc16e.png" #  the website favicon
