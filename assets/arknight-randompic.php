@@ -67,5 +67,5 @@ $img[64]='https://sunbossrs.coding.net/p/ws-data/d/ws-data/git/raw/master/douga/
 $img[65]='20200107223050_rzjnq.jpg';
 $img[66]='20200109113908_ehnib.jpg';
 $img[67]='20200110110951_fBiB4.jpg';
-header("location: $img[$id]");
+echo "$img[$id]";
 ?>
